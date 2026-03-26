@@ -1,0 +1,20 @@
+{
+  "name": "frontend-design",
+  "description": "Create distinctive, production-grade frontend interfaces that avoid generic AI aesthetics",
+  "version": "1.0.0",
+  "author": {
+    "name": "Dharun"
+  },
+  "repository": "https://github.com/dharun/dharunrepo",
+  "license": "MIT",
+  "keywords": [
+    "github-copilot",
+    "frontend",
+    "design",
+    "ui",
+    "production-grade"
+  ],
+  "skills": [
+    "./skills/frontend-design"
+  ]
+}
