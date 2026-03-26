@@ -1,0 +1,22 @@
+{
+  "name": "code-review",
+  "version": "1.0.0",
+  "displayName": "Code Review",
+  "description": "Automated code review for pull requests using multiple specialized agents with confidence-based scoring to filter false positives",
+  "publisher": "dharun",
+  "type": "plugin",
+  "commands": [
+    {
+      "name": "code-review",
+      "description": "Performs automated code review on a pull request using multiple specialized agents",
+      "category": "Git"
+    }
+  ],
+  "agents": [],
+  "skills": [],
+  "hooks": [],
+  "requirements": {
+    "tools": ["Bash(gh issue view:*)", "Bash(gh search:*)", "Bash(gh issue list:*)", "Bash(gh pr comment:*)", "Bash(gh pr diff:*)", "Bash(gh pr view:*)", "Bash(gh pr list:*)"],
+    "mcp": ["mcp__github_inline_comment__create_inline_comment"]
+  }
+}

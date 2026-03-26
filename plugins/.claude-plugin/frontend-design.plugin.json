@@ -1,0 +1,17 @@
+{
+  "name": "frontend-design",
+  "version": "1.0.0",
+  "displayName": "Frontend Design",
+  "description": "Create distinctive, production-grade frontend interfaces that avoid generic AI aesthetics",
+  "publisher": "dharun",
+  "type": "plugin",
+  "commands": [],
+  "agents": [],
+  "skills": [
+    {
+      "name": "frontend-design",
+      "description": "Auto-invoked for frontend work, providing guidance on bold design choices, typography, animations, and visual details"
+    }
+  ],
+  "hooks": []
+}

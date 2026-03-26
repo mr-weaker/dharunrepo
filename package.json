@@ -1,0 +1,25 @@
+{
+  "name": "dharun-claude-plugins",
+  "version": "1.0.0",
+  "description": "A collection of Claude Code plugins for code review, frontend design, and security guidance",
+  "author": "dharun",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dharunplugin/dharunrepo.git"
+  },
+  "keywords": [
+    "claude-code",
+    "plugins",
+    "code-review",
+    "frontend-design",
+    "security"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "echo \"No tests yet\"",
+    "lint": "echo \"No linter configured\""
+  }
+}

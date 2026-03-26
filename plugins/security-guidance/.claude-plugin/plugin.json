@@ -1,0 +1,20 @@
+{
+  "name": "security-guidance",
+  "version": "1.0.0",
+  "displayName": "Security Guidance",
+  "description": "Security reminder hook that warns about potential security issues when editing files",
+  "publisher": "dharun",
+  "type": "plugin",
+  "commands": [],
+  "agents": [],
+  "skills": [],
+  "hooks": [
+    {
+      "name": "PreToolUse",
+      "description": "Monitors file edits for 9 security patterns including command injection, XSS, eval usage, dangerous HTML, pickle deserialization, and os.system calls"
+    }
+  ],
+  "requirements": {
+    "python": "3.6+"
+  }
+}
