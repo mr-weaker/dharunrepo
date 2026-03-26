@@ -1,0 +1,26 @@
+{
+  "name": "dharun-tools",
+  "owner": {
+    "name": "Dharun"
+  },
+  "metadata": {
+    "description": "Plugins for code review, frontend design, and security guidance"
+  },
+  "plugins": [
+    {
+      "name": "code-review",
+      "description": "Automated PR code review with multi-agent confidence scoring",
+      "source": "./plugins/code-review"
+    },
+    {
+      "name": "frontend-design",
+      "description": "Create distinctive, production-grade frontend interfaces",
+      "source": "./plugins/frontend-design"
+    },
+    {
+      "name": "security-guidance",
+      "description": "Security reminder hook to warn on risky edits",
+      "source": "./plugins/security-guidance"
+    }
+  ]
+}
