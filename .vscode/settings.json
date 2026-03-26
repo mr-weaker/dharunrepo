@@ -1,0 +1,11 @@
+{
+  "chat.plugins.enabled": true,
+  "chat.plugins.marketplaces": [
+    "file:///d:/dharunplugin/dharunrepo"
+  ],
+  "enabledPlugins": {
+    "code-review@dharun-tools": true,
+    "frontend-design@dharun-tools": true,
+    "security-guidance@dharun-tools": true
+  }
+}
