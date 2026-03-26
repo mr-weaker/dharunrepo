@@ -1,0 +1,30 @@
+{
+  "plugins": [
+    {
+      "name": "code-review",
+      "path": "./plugins/code-review"
+    },
+    {
+      "name": "frontend-design",
+      "path": "./plugins/frontend-design"
+    },
+    {
+      "name": "security-guidance",
+      "path": "./plugins/security-guidance"
+    }
+  ],
+  "pluginSettings": {
+    "code-review": {
+      "enabled": true,
+      "allowTools": ["Bash(gh:*)", "mcp__github_inline_comment__create_inline_comment"]
+    },
+    "frontend-design": {
+      "enabled": true,
+      "autoInvoke": true
+    },
+    "security-guidance": {
+      "enabled": true,
+      "autoInvoke": true
+    }
+  }
+}
