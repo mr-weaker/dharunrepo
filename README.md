@@ -1,78 +1,45 @@
-# Dharun GitHub Copilot Plugins
+# codestudio-plugins
+The official Code Studio plugins hub — a curated collection of MCP servers, developer skills, workflow hooks, and extensibility modules designed to enhance and customize the Code Studio experience.
 
-A collection of GitHub Copilot plugins for code review, frontend design, and security guidance.
+## Plugins Index (Skills as Plugins)
 
-## 📦 Plugins Included
+This repo exposes plugins the same way as Awesome Copilot:
 
-### 1. **Code Review** (`code-review/`)
-Automated pull request review using multiple specialized agents with confidence-based scoring.
+- Per-plugin folders under [plugins/](plugins/) with manifests at `.github/plugin/plugin.json` (marketplace format).
 
-### 2. **Frontend Design** (`frontend-design/`)
-Create distinctive, production-grade frontend interfaces that avoid generic AI aesthetics.
+- Source of truth: `skills/*/SKILL.md` with frontmatter (name, description, metadata)
+- Docs: per-skill `skills/*/references/*.md`
+Per-plugin manifest example: `plugins/syncfusion-react-3d-chart/.github/plugin/plugin.json`
 
-### 3. **Security Guidance** (`security-guidance/`)
-Security reminder hook that warns about potential security issues when editing files.
-
-## 🚀 Installation
-
-Using Copilot CLI:
-
-```bash
-# Install individual plugin (if published to a marketplace)
-copilot plugin install code-review@dharun
-copilot plugin install frontend-design@dharun  
-copilot plugin install security-guidance@dharun
+```json
+{
+	"name": "syncfusion-react-3d-chart",
+	"version": "33.1.44",
+	"description": "...",
+	"author": { "name": "Syncfusion Inc" },
+	"keywords": ["syncfusion", "react", "charts", "3d"]
+}
 ```
 
-Or clone this repository and reference locally:
+Example consumer flow (pseudo):
 
-```bash
-# Clone the repository
-git clone https://github.com/dharun/dharunrepo.git
-
-# Reference plugins in your project's .github/copilot/settings.json
+```ts
+// Load and render available plugins
+const registry = await fetch("./plugins.json").then(r => r.json());
+for (const p of registry.plugins) {
+	console.log(p.name, p.entry, p.packages);
+}
 ```
 
-## 📋 Plugin Details
+Schema (minimal):
 
-- [Code Review Plugin](./plugins/code-review/README.md)
-- [Frontend Design Plugin](./plugins/frontend-design/README.md)
-- [Security Guidance Plugin](./plugins/security-guidance/README.md)
+- id: unique slug (folder name)
+- name: display name
+- description: short summary
+- author, category, version
+- entry: path to SKILL.md
+- docs: array of reference doc paths
+- tags: quick filter chips
+- packages: npm packages to install when applicable
 
-## 🔧 Project Structure
-
-```
-dharunrepo/
-└── plugins/
-    ├── code-review/
-    │   ├── .github/plugin/
-    │   │   └── plugin.json
-    │   ├── commands/
-    │   │   └── code-review.md
-    │   └── README.md
-    ├── frontend-design/
-    │   ├── .github/plugin/
-    │   │   └── plugin.json
-    │   ├── skills/
-    │   │   └── frontend-design/
-    │   │       └── SKILL.md
-    │   └── README.md
-    └── security-guidance/
-        ├── .github/plugin/
-        │   └── plugin.json
-        ├── hooks/
-        │   ├── hooks.json
-        │   └── security_reminder_hook.py
-        └── README.md
-```
-
-## 📚 Documentation
-
-For more information about GitHub Copilot customization:
-
-- [VS Code Copilot Customization Documentation](https://code.visualstudio.com/docs/copilot/copilot-customization)
-- [Awesome GitHub Copilot](https://github.com/github/awesome-copilot)
-
-## 📝 License
-
-MIT
+See [plugins.json](plugins.json) for the generated listing.

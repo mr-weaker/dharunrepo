@@ -1,0 +1,17 @@
+{
+  "name": "syncfusion-react-3d-chart",
+  "version": "33.1.44",
+  "description": "Syncfusion React 3D Chart skill plugin: 3D column/bar/stacked charts with axes, data binding, labels, legend, tooltip, selection, print/export, theming, and accessibility.",
+  "author": { "name": "Syncfusion Inc" },
+  "keywords": [
+    "syncfusion",
+    "react",
+    "charts",
+    "3d",
+    "ej2-react-charts",
+    "data-visualization"
+  ],
+  "skills": [
+    "../../skills/syncfusion-react-3d-chart/"
+  ]
+}
