@@ -1,0 +1,16 @@
+{
+  "name": "syncfusion-react-accordion",
+  "version": "33.1.44",
+  "description": "Syncfusion React Accordion skill plugin: collapsible content panels with expand modes, animations, dynamic content, styling, events, and accessibility.",
+  "author": { "name": "Syncfusion Inc" },
+  "keywords": [
+    "syncfusion",
+    "react",
+    "accordion",
+    "navigation",
+    "ej2-react-navigations"
+  ],
+  "skills": [
+    "../../skills/syncfusion-react-accordion/"
+  ]
+}
