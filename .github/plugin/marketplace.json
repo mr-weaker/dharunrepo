@@ -15,21 +15,21 @@
       "source": "syncfusion-react-3d-chart",
       "description": "Syncfusion React 3D Chart skill plugin: 3D column/bar/stacked charts with axes, data binding, labels, legend, tooltip, selection, print/export, theming, and accessibility.",
       "version": "33.1.44",
-      "icon": "https://raw.githubusercontent.com/mr-weaker/dharunrepo/syncplug/assets/logo.png"
+      "icon": "https://raw.githubusercontent.com/mr-weaker/dharunrepo/main/assets/logo.png"
     },
     {
       "name": "syncfusion-react-3d-circular-chart",
       "source": "syncfusion-react-3d-circular-chart",
       "description": "Syncfusion React 3D Circular Chart skill plugin: 3D pie/donut charts with labels, legend, tooltip, export/print, and empty point handling.",
       "version": "33.1.44",
-      "icon": "https://raw.githubusercontent.com/mr-weaker/dharunrepo/syncplug/assets/logo.png"
+      "icon": "https://raw.githubusercontent.com/mr-weaker/dharunrepo/main/assets/logo.png"
     },
     {
       "name": "syncfusion-react-accordion",
       "source": "syncfusion-react-accordion",
       "description": "Syncfusion React Accordion skill plugin: collapsible content panels with expand modes, animations, dynamic content, styling, events, and accessibility.",
       "version": "33.1.44",
-      "icon": "https://raw.githubusercontent.com/mr-weaker/dharunrepo/syncplug/assets/logo.png"
+      "icon": "https://raw.githubusercontent.com/mr-weaker/dharunrepo/main/assets/logo.png"
     }
   ]
 }
